@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kader | Developpeur Web - Dubaï 2026</title>
+    <style>
+      *{ margin: 0; padding: 0; box-sizing: border-box;}
+      body{ font-family: Arial, sans-serif; background: #0f172a; color: #fff; line-height: 1.6; }
+      header{ background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 100px 20px; text-align: center; }
+      h1{ font-size: 48px; margin-bottom: 10px; }
+      .subtitle{ font-size: 24px; opacity: O.9; margin-bottom: 3Opx; }
+      .btn{ background: #2ecc71; color: #fff; padding: 15px 30px; border: none; border-radius: 8px; font-size: 18px; cursor: pointer; text-decoration: none; display: inline-block;  }      
+      btn:hover { background: #27ae60; }
+      section{ padding: 80px 20px; max-width: 1000px; margin: 0 auto; }
+      h2{ font-size: 36px; text-align: center; margin-bottom: 50px; color: #667eea; }
+      .competences{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 50px; }
+      .skill{ background: #1e293b; padding: 30px; border-radius: 10px; text-align: center; }
+      .projets{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+      .projet { background: #1e293b; padding: 20px; border-radius: 10px; }
+      .projet h3 { color: #e67e22; margin-bottom: 1àpx; }
+      .projet a { color:  #2ecc71; text-decoration: none; }
+      .projet a:hover{ text-decoration: underline; }
+      .form { background:  #1e293b; padding: 40px; border-radiu: 10px; max-width: 600px; margin: 0 auto }
+      input, texterea{ width: 100%; padding: 12px; margin-bottom:20px; border: none; border-radius: 5px; background:#334155; color:#fff; font-size: 16px; }
+      #message-confirmation { text-align: center; color:  #2ecc71; font-size: : 20px; margin-top: 20px; display: none; }
+      footer{ text-align: center; padding: 40px; background:  #1e293b; margin-top: 80px; }
+      @media (max-width: 768px) {
+        .competences, .projets { grid-template-columns: 1fr; }
+        h1 { font-size: 36px; }
+        header { padding: 60px 20px; }
+      }
+    </style>
+  </head>
+     <body>
+         </header>
+         <h1>KANE KADER</h1>
+         <p class="subtitle">Développeur Front-End | Objectif Dubaï 2026</p>
+         <a href="contact" class="btn">Me Contacter</a>
+     </header>
+        <section id="apropos">
+         <h2>À Propos</h2>
+          <p style=text-align: center;front-size: 18px;>
+            Débutant il y a 4 semaines, aujourd'hui je code en HTML, CSS et JavaScript.
+            <br>Mon objectif : Rejoindre une entreprise tech à Dubaï avant 2026.
+            <br><strong>Motivation 10000%. Discipline 10000%.</strong>
+          </p>
+        </section>
+
+        <section id="competences">
+         <h2>Competences</h2>
+          <div class="compétences">
+            <div class="skill"><h3>HTML5</h3><p>Structure Web</p></div>
+            <div class="skill"><h3>CSS3</h3><p>Design + Grid + Flex</p></div>
+            <div class="skill"><h3>JavaScript</h3><p>Sites Interactifs</p></div>
+          </div>
+        </section>
+         <section id="projets">
+             <h2>Mes Projets</h2
+             <div class="projets">
+              <div class="projet">
+                <h3>projet 1/4 </h3>  
+                 <p>Portfolio HTML</p>
+                <a href="https://kader0586838725.github.io/kane-kader-officiel/portfolio.html" target="_blank">Voir le projet</a>
+             </div>
+                </div>
+              <div class="projet">
+                <h3>projet 2/4 </h3>  
+                 <p>Site CSS Pro</p>
+                <a href="https://kader0586838725.github.io/kane-kader-officiel/portfolio.html" target="_blank">Voir le projet</a>
+             </div>
+                </div>
+              <div class="projet">
+                <h3>projet 3/4 </h3>  
+                 <p>Calculatrice JS</p>
+                <a href="https://kader0586838725.github.io/kane-kader-officiel/calculatrice.html" target="_blank">Voir le projet</a>
+             </div>
+                </div>
+            </section>
+      
+         <section id="contact">
+            <h2>Contact</h2>
+            <form onsubmit="envoyerMessage(event)">
+               <input type="text"id="nom" placeholder="Ton nom" required>
+               <input type="email"id="email" placeholder="Ton email" required>
+               <texterea id="message" rows="5" placeholder="Ton nom" required> </texterea>
+                  <button type="submit" class="btn" style="width: 100%">ENvoyer </button>
+            </form>
+            <p id="message-confirmation">Message envoyer ! je te reponds vite. </p>
+         </section>
+       
+        <footer>
+           <p>Copyright 2026 - Développeur Dubaï | Codé avec la rage de vaincre </p>
+        </footer>
+
+     </script>
+      function envoyerMEssage(event) {
+event.preventDefault();
+document.getElementById('message-confirmation').style.display ='block';
+document.getElementById('nom').value ='';
+document.getElementById('email').value ='';
+document.getElementbyId('message').value ='';
+setTimeout() => {
+      document.getElementById('message-confirmation').style.display = 'none';
+}, 4000);
+} 
+</script>
+     </body>
+</html>
