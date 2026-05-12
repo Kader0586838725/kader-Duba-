@@ -55,7 +55,7 @@ const response = await fetch(url);
 const data = await response.json();
 const { temperature: temp, weathercode: code} = data.current_weather;
 
-document.getElementBtId('temp').textContent = temp + '°C';
+document.getElementById('temp').textContent = temp + '°C';
 
 if (code ===0) document.getElementById('desc').textContent = 'Ciel dégagé ☀ ';
 else if (code <= 3) document.getElementById('desc').textContent = 'Partiellement nuageux ⛅ ';
