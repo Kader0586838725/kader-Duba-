@@ -53,7 +53,7 @@ const url = 'https://api.open-meteo.com/v1/forecast?latitude=25.2048&longitude=5
 try{
 const response = await fetch(url);
 const data = await response.json();
-const temp =data.current_weather.weathercode;
+const { temperature: temp, weathercode: code} = data.current_weather;
 
 document.getElementBtId('temp').textContent = temp + '°C';
 
