@@ -43,9 +43,8 @@ button:hover{ background: #059669; }
 <h1>☀ Météo Dubaï </h1>
 <p id="ville">Dubaï, Émirats Arabes Unis</p>
 <h2 id="temp">--°C</h2>
-<p id="dsec">Clique pour charger la météo </p>
+<p id="desc">Clique pour charger la météo </p>
 <button onclick="getMeteo()">Actualiser</button>
-<button id="refreshbtn">Actualiser</button> 
 <a href="portfolio.html" class="back"> Retour Portfolio</a>
 </div>
 <script>
@@ -67,7 +66,7 @@ document.getElementById('desc').textContent = 'Erreur API';
 }
 // charge auto au démarrage 
 getMeteo();
- document.getElementById('refreshbtn').addEventListener('click', getMeteo);
+
 </script>
 </body>
 <html>
